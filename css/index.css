@@ -1,0 +1,271 @@
+/*清楚默认样式*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*设置body背景*/
+body{
+    background-image: url(../image/bd-bg.png);
+    background-repeat: repeat-x;
+}
+/*
+ * 解决高度塌陷问题clearfix
+ */
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*设置header*/
+.header{
+    /*background-color: red;*/
+    padding:46px 0px 46px;
+}
+/*固定宽度并居中*/
+.w{
+    width: 940px;
+    margin: 0 auto;
+}
+/*设置logo图片*/
+.logo{
+margin-left: 15px;
+}
+/*设置导航条*/
+.nav{
+ float: right;
+ margin-top:22px;
+}
+.nav li{
+float:left;
+padding: 0 10px 8px;
+border-left: 1px #d6d6d6 dotted;
+list-style-type: none;
+}
+/*设置超链接*/
+.nav a{
+color: #666;
+font: bold 14px Georgia;
+text-decoration: none;
+}
+.nav a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+.nav p{
+    color: #b7b7b7;
+    font: 11px tahoma;
+}
+/*设置banner*/
+.banner{
+
+    height: 356px;
+    background: url(../image/banner-bg.png) no-repeat bottom center ;
+    position: relative;
+}
+/*设置导航按钮*/
+.pointerDiv{
+    position: absolute;
+    top: 314px;
+    left: 15px;
+}
+.pointerDiv a{
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-left:4px;
+    background:url(../image/sprite.png) no-repeat;
+}
+/*按钮点击和鼠标在按钮上的效果*/
+.pointerDiv .active,
+.pointerDiv a:hover{
+    background:url(../image/sprite.png) no-repeat -27px 0px;
+}
+/*设置content头部的标题*/
+.content h1{
+text-align: center;
+font: bold 24px Georgia;
+padding: 6px 0 20px 0;
+margin-bottom: 38px;
+/*设置标题的下背景*/
+background: url(../image/line.png) no-repeat bottom center;
+}
+/*同时设置三个div*/
+.content .pl,.content .uc,.content .cs,
+.contact .sc,.contact .ct,.contact .nu{
+    float: left;
+    width: 300px;
+}
+/*设置中间div*/
+.content .cs,.contact .ct{
+    margin: 0px 20px;
+}
+/*设置content下的标题*/
+.content h2{
+    color: #11719e;
+    font: 21px Georgia;
+}
+/*设置content 标题下的段落*/
+.content .p1{
+    color: #8c8c8c;
+    font: 12px Helvetica;
+}
+/*设置content下的图片div*/
+.content .imgDiv{
+    width: 299px;
+    height: 190px;
+    background: url(../image/img-bg.png) no-repeat;
+    margin: 16px 0px 10px 0px;
+    text-align: center;
+    padding-top: 12px;
+}
+/*content图片下的段落*/
+.content .p2{
+    height: 92px;
+    color: #3e3e3e;
+    font: 13px Helvetica;
+    word-spacing: 2px;
+}
+/*设置content下的链接*/
+.content .lm{
+display: block;
+width: 163px;
+height: 40px;
+background: url(../image/btn1.png) no-repeat;
+text-decoration: none;
+color: #16999;
+font: 12px/40px Helvetica;
+text-indent: 1em;
+margin-bottom: 35px;
+}
+/*设置联系框*/
+.contact{
+background: url(../image/line.png) no-repeat top center;
+}
+/*设置联系框标题*/
+.contact h2{
+    color:#444;
+    font:18px/1 Georgia;
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 44px 0px 10px;
+    margin-bottom: 15px;
+}
+/**
+*设置联系左侧Social Connection框
+*/
+/*设置段落*/
+.sc .p1{
+    color: #444;
+    font: 12px/1 Helvetica;
+}
+/*设置图标*/
+.sc .icon{
+    margin-top: 4px;
+}
+/*设置contact下面标题*/
+.sc .nl{
+font: bold 18px/1 "gill sans mt";
+padding: 30px 0px 15px;
+}
+/*设置输入框*/
+.sc .text{
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+    background: url(../image/input.png) no-repeat;
+    /*去除默认边框*/
+    border: none;
+    padding: 0px 10px;
+    margin: 10px 0px 0px;
+}
+/**
+*设置中间Contact框
+*/
+/*文本输入框设置*/
+.contact .txt{
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+    background: url(../image/input.png) no-repeat;
+    /*ie6兼容*/
+    _background-attachment: fixed;
+    /*去除默认边框*/
+    border: none;
+    padding: 0px 10px;
+    margin: 0px 0px 16px;
+}
+/*文本域设置*/
+.contact .tarea{
+    width: 276px;
+    height: 114px;
+    background: url(../image/textarea.png) no-repeat;
+    /*单独为IE6设置一个背景不随元素滚动*/
+    _background-attachment: fixed;
+    /*去除默认边框*/
+    border: none;
+    /*去除滚动条*/
+    overflow: auto;
+    /* 设置文本域不能调整大小*/
+    resize: none;
+    padding: 10px;
+    margin: 0;
+}
+/*设置按钮*/
+.contact .btn{
+width: 163px;
+height: 32px;
+background: url(../image/btn2.png) no-repeat;
+border: none;
+margin: 11px 0px 23px;
+color: white;
+font: 13px Georgia;
+text-align: left;
+text-indent: 1em;
+}
+/**
+*设置右侧News Updates框
+*/
+/*设置段落图片*/
+.nu p{
+    color: #444;
+    font: 12px/1 Helvetica;
+    height: 58px;
+    border-bottom:1px dashed #d3d3d3;
+    margin-bottom: 14px;
+    padding-bottom: 9px;
+}
+.nu .no-margin{
+    margin-bottom: 0px;
+}
+/*设置图片*/
+.nu img{
+    float: left;
+    margin-right: 8px;
+}
+/**
+*设置底部版权
+*/
+/*设置footer*/
+.footer{
+    height: 173px;
+    background-color: #333;
+    border-top:10px solid #4c4c4c;
+}
+.footer .w{
+    padding-top: 18px;
+}
+/**
+*设置版权段落和链接
+*/
+.footer .copy {
+    float: right;
+    display: inline;
+}
+.footer p{
+    margin: 0px 23px 6px 8px;
+}
+.footer a, .footer p {
+    color: #999;
+    font: 11px Helvetica;
+    text-decoration: none;
+}
