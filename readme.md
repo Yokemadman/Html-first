@@ -4,4 +4,4 @@
 <br>
 提示：本次项目只是一个简单的静态页面，没有任何动态效果
 <br>
-网站发布：<a href="https://yokemadman.github.io/Html-first/">演示</a>
+网站发布：<a href="https://yokemadman.github.io/Html-first/">Demo</a>
